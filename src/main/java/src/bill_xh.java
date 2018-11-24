@@ -20,7 +20,7 @@ import java.util.Map;
 public class bill_xh {
     private static final Logger logger = LoggerFactory
             .getLogger(bill_xh.class);
-    int flag = 1;
+   static int flag = 1;
 
     /**
      * 计算总计数据

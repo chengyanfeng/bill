@@ -17,7 +17,7 @@ import java.util.Set;
 public class bill_new_cc {
 
         HashMap<String, bean> map = new HashMap<>();
-        long i = 0;
+       static long i = 0;
         public void calculateCC(String startTime, String endTime, String filePath, String defaultSheetName) {
 
             FindIterable<Document> test = Mongodbjdbc.MongGetDom().getCollection(
