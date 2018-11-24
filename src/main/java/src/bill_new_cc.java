@@ -208,6 +208,7 @@ public class bill_new_cc {
             }
 
             ExcelUtil.INSTANCE.saveExcelAndReset(wb, ExcelUtil.INSTANCE.getFilePath());
+            map.clear();
         }
 
 

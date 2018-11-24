@@ -173,6 +173,7 @@ public class yw_xh {
         }
 
         ExcelUtil.INSTANCE.saveExcelAndReset(wb, ExcelUtil.INSTANCE.getFilePath());
+        map.clear();
     }
 
     private static boolean isLoction(String CODED_NO, String DISTRICT_CODE, MongoCollection<Document> mobile_code_collection) {
