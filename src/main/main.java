@@ -14,7 +14,7 @@ public class main {
 
     public static void main(String arg[]) {
         String path = getProperties_3("/main/resources/path.properties", "path");
-
+        System.out.println("配置文件路径:"+path);
         //计费---小号----数据
        new Thread() {
             public void run() {
@@ -47,23 +47,101 @@ public class main {
                 logger.info("启动-------业务------外呼-------cc-----------线程");
                 yw_cc yw_cc = new yw_cc();
                 yw_cc.calculateCC("2016-06-01 00:00:00", "2016-07-01 00:00:00", path + "2016-06-01-yw-cc.xlsx", "sheet");
-                yw_cc.calculateCC("2016-12-01 00:00:00", "2017-01-01 00:00:00", path + "2016-012-01-yw-cc.xlsx", "sheet");
-                yw_cc.calculateCC("2017-04-01 00:00:00", "2017-05-01 00:00:00", path + "2016-04-01-yw-cc.xlsx", "sheet");
-                yw_cc.calculateCC("2017-11-01 00:00:00", "2017-12-01 00:00:00", path + "2016-11-01-yw-cc.xlsx", "sheet");
-                yw_cc.calculateCC("2018-03-01 00:00:00", "2018-04-01 00:00:00", path + "2018-03-01-yw-cc.xlsx", "sheet");
-                yw_cc.calculateCC("2018-09-01 00:00:00", "2018-10-01 00:00:00", path + "2018-09-01-yw-cc.xlsx", "sheet");
+                yw_cc.calculateCC("2016-12-01 00:00:00", "2017-01-01 00:00:00", path + "2016-12-01-yw-cc.xlsx", "sheet");
+               //开启内部线程
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------cc----2017-04-01-------线程");
+                        logger.info("启动-------业务------外呼-------cc----2017-04-01-------线程");
+                        yw_cc.calculateCC("2017-04-01 00:00:00", "2017-05-01 00:00:00", path + "2017-04-01-yw-cc.xlsx", "sheet");
+                        }
+                }.start();
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------cc----2017-11-01-------线程");
+                        logger.info("启动-------业务------外呼-------cc----2017-11-01-------线程");
+                        yw_cc.calculateCC("2017-11-01 00:00:00", "2017-12-01 00:00:00", path + "2017-11-01-yw-cc.xlsx", "sheet");
+                    }
+                }.start();
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------cc----2018-03-01-------线程");
+                        logger.info("启动-------业务------外呼-------cc----2018-03-01-------线程");
+                        yw_cc.calculateCC("2018-03-01 00:00:00", "2018-04-01 00:00:00", path + "2018-03-01-yw-cc.xlsx", "sheet");
+                    }
+                }.start();
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------cc----2018-09-01-------线程");
+                        logger.info("启动-------业务------外呼-------cc----2018-09-01-------线程");
+                        yw_cc.calculateCC("2018-09-01 00:00:00", "2018-10-01 00:00:00", path + "2018-09-01-yw-cc.xlsx", "sheet");
+                    }
+                }.start();
+
             }
         }.start();
+
         //业务----小号-----xh-----数据
         new Thread() {
             public void run() {
+                System.out.println("启动------业务-------小号---------线程");
+                logger.info("启动------业务-------小号---------线程");
                 yw_xh yw_xh = new yw_xh();
-                yw_xh.calculateCC("2016-06-01 00:00:00", "2016-07-01 00:00:00", path + "2016-06-01-yw-xh.xlsx", "sheet");
-                yw_xh.calculateCC("2016-12-01 00:00:00", "2017-01-01 00:00:00", path + "2016-12-01-yw-xh.xlsx", "sheet");
-                yw_xh.calculateCC("2017-04-01 00:00:00", "2017-05-01 00:00:00", path + "2017-03-01-yw-xh.xlsx", "sheet");
-                yw_xh.calculateCC("2017-11-01 00:00:00", "2017-11-01 00:00:00", path + "2017-11-01-yw-xh.xlsx", "sheet");
-                yw_xh.calculateCC("2018-03-01 00:00:00", "2018-04-01 00:00:00", path + "2018-03-01-yw-xh.xlsx", "sheet");
-                yw_xh.calculateCC("2018-09-01 00:00:00", "2018-10-01 00:00:00", path + "2018-09-01-yw-xh.xlsx", "sheet");
+
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------小号----2016-06-01-------线程");
+                        logger.info("启动-------业务------外呼-------小号----2016-06-01-------线程");
+                        yw_xh.calculateCC("2016-06-01 00:00:00", "2016-07-01 00:00:00", path + "2016-06-01-yw-xh.xlsx", "sheet");
+                    }
+                }.start();
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------小号----2016-12-01-------线程");
+                        logger.info("启动-------业务------外呼-------小号----2016-12-01-------线程");
+                        yw_xh.calculateCC("2016-12-01 00:00:00", "2017-01-01 00:00:00", path + "2016-12-01-yw-xh.xlsx", "sheet");
+                    }
+                }.start();
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------小号----2017-03-01-------线程");
+                        logger.info("启动-------业务------外呼-------小号----2017-03-01-------线程");
+                        yw_xh.calculateCC("2017-04-01 00:00:00", "2017-05-01 00:00:00", path + "2017-03-01-yw-xh.xlsx", "sheet");
+                    }
+                }.start();
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------小号----2017-11-01-------线程");
+                        logger.info("启动-------业务------外呼-------小号----2017-11-01-------线程");
+                        yw_xh.calculateCC("2017-11-01 00:00:00", "2017-11-01 00:00:00", path + "2017-11-01-yw-xh.xlsx", "sheet");
+                    }
+                }.start();
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------小号----2018-03-01-------线程");
+                        logger.info("启动-------业务------外呼-------小号----2018-03-01-------线程");
+                        yw_xh.calculateCC("2018-03-01 00:00:00", "2018-04-01 00:00:00", path + "2018-03-01-yw-xh.xlsx", "sheet");
+                    }
+                }.start();
+                new Thread() {
+                    @Override
+                    public void run() {
+                        System.out.println("启动-------业务------外呼-------小号----2018-09-01-------线程");
+                        logger.info("启动-------业务------外呼-------小号----2018-09-01-------线程");
+                        yw_xh.calculateCC("2018-09-01 00:00:00", "2018-10-01 00:00:00", path + "2018-09-01-yw-xh.xlsx", "sheet");
+                    }
+                }.start();
+
+
             }
         }.start();
 
