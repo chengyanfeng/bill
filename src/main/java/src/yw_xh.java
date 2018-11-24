@@ -31,7 +31,6 @@ public class yw_xh {
         //获取单价表集合
         MongoCollection<Document> collection = Mongodbjdbc.MongGetDom().getCollection("platform_account_product");
         while (mongoCursor.hasNext()) {
-            System.out.println(i);
             bean bean = new bean();
             Document mongodb = mongoCursor.next();
             //获取参数
@@ -177,6 +176,9 @@ public class yw_xh {
     }
 
     private static boolean isLoction(String CODED_NO, String DISTRICT_CODE, MongoCollection<Document> mobile_code_collection) {
+        if(CODED_NO.length()<8){
+            return true;
+        }
         if (CODED_NO.substring(0, 1).equals("0")) {
             CODED_NO = CODED_NO.substring(0, 4);
             if (DISTRICT_CODE.equals(CODED_NO)) {

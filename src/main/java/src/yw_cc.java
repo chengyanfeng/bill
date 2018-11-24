@@ -229,6 +229,12 @@ public class yw_cc {
     }
 
     private static boolean isLoction(String CODED_NO, String DISTRICT_CODE, MongoCollection<Document> mobile_code_collection) {
+        if(CODED_NO.length()<8){
+            return true;
+        }
+        if(CODED_NO.substring(0, 1).equals("4")){
+            return true;
+        }
         if (CODED_NO.substring(0, 1).equals("0")) {
             CODED_NO = CODED_NO.substring(0, 4);
             if (DISTRICT_CODE.equals(CODED_NO)) {
