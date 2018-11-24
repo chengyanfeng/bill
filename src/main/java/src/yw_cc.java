@@ -21,7 +21,7 @@ public class yw_cc {
     static long i = 0;
 
     public void calculateCC(String startTime, String endTime, String filePath, String defaultSheetName) {
-
+        try{
         FindIterable<Document> test = Mongodbjdbc.MongGetDom().getCollection("c5_call_sheet").find(new Document().append("BEGIN_TIME", new Document()
                 .append("$gte", startTime)
                 .append("$lte", endTime))
@@ -68,6 +68,9 @@ public class yw_cc {
             if (i % 10000 == 0) {
                 System.out.println("业务----------外呼-------cc------->第" + i + "条数据");
             }
+        }} catch (Exception e){
+            System.out.println("业务------------外呼---------cc--------报错了");
+
         }
         //导出数据
         exportData(filePath, defaultSheetName);

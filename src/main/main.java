@@ -27,11 +27,11 @@ public class main {
             }
         }.start();
         //计费---外呼---cc--数据
-        new Thread() {
+      new Thread() {
             public void run() {
                 System.out.println("启动--------计费-----外呼-------cc----------线程");
                 logger.info("启动-------计费------外呼-------cc-----------线程");
-                new Thread() {
+                  new Thread() {
                     @Override
                     public void run() {
                         System.out.println("启动-------计费------外呼-------cc----2016-06-01-------线程");
@@ -169,12 +169,12 @@ public class main {
         }.start();
 
         //业务----小号-----xh-----数据
-        new Thread() {
+       new Thread() {
             public void run() {
                 System.out.println("启动------业务-------小号---------线程");
                 logger.info("启动------业务-------小号---------线程");
 
-                new Thread() {
+               new Thread() {
                     @Override
                     public void run() {
                         yw_xh yw_xh = new yw_xh();
