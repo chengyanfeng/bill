@@ -193,6 +193,8 @@ public class yw_xh {
             try {
                 area_code = data.getString("area_code");
             } catch (Exception e) {
+                System.out.println("-------------------------------->"+CODED_NO);
+                System.out.println("业务------小号------区域对比------area_code---为空");
                 System.out.println(e);
             }
             if (DISTRICT_CODE.equals(area_code)) {
