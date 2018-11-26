@@ -128,6 +128,7 @@ public class yw_xh {
             value.setSecnods6(value.getSecnods6() + bean.getSecnods6());
             value.setSeconds(value.getSeconds() + bean.getSeconds());
             value.setMinutes(value.getMinutes() + bean.getMinutes());
+            value.setTotalPrice(value.getTotalPrice() + bean.getTotalPrice());
             value.setCount(value.getCount() + 1);
         } else {
             bean.setCount(1);
