@@ -20,9 +20,9 @@ public class yw_xh {
 
     public void calculateCC(String startTime, String endTime, String filePath, String defaultSheetName) {
 
-        FindIterable<Document> test = Mongodbjdbc.MongGetDom().getCollection("c5_call_sheet").find(new Document().append("BEGIN_TIME", new Document()
-                .append("$gte", startTime)
-                .append("$lte", endTime))
+        FindIterable<Document> test = Mongodbjdbc.MongGetDom().getCollection("c5_call_sheet").find(new Document().append("END_TIME", new Document()
+                .append("$gt", startTime)
+                .append("$lt", endTime))
                 .append("CALL_TIME_LENGTH", new Document("$gt", 0)).append("MID_NO",new Document("$exists",true))).noCursorTimeout(true)
                 .projection(new Document("ACCOUNT_ID", 1)
                         .append("CONNECT_TYPE", 1)
@@ -73,9 +73,9 @@ public class yw_xh {
     public static double getPrcie(Document data, String CONNECT_TYPE, long CALL_TIME_LENTH) {
         double total = 0;
         long price = 1000;
-        Boolean ifCallback = true;
+        Boolean ifCallback = false;
         if (CONNECT_TYPE.equals("dialout")) {
-            ifCallback = false;
+            ifCallback = true;
         }
         long Minutes = 0;
         long minutes = new Double(Math.ceil(CALL_TIME_LENTH / 60.0)).longValue();

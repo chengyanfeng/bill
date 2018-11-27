@@ -30,6 +30,7 @@ public class yw_cc {
                 .projection(new Document("ACCOUNT_ID", 1)
                         .append("CALLED_NO", 1)
                         .append("CALL_NO", 1)
+                        .append("BEGIN_TIME", 1)
                         .append("CALL_TIME_LENGTH", 1)
                         .append("DISTRICT_CODE", 1));
         MongoCursor<Document> mongoCursor = test.iterator();
@@ -38,35 +39,41 @@ public class yw_cc {
         //获取电话区号集合
         MongoCollection<Document> mobile_code_collection = Mongodbjdbc.MongGetDom().getCollection("tbl_mobile_code");
         while (mongoCursor.hasNext()) {
-            bean bean = new bean();
-            Document mongodb = mongoCursor.next();
-            //获取参数
-            String accountId = mongodb.getString("ACCOUNT_ID");
-            String CALLED_NO = mongodb.getString("CALLED_NO");
-            String CAll_NO = mongodb.getString("CALL_NO");
-            //排除400号码
-            if(CAll_NO.substring(0,1).equals("4")){
-                continue;
-            }
-            String DISTRICT_CODE = mongodb.getString("DISTRICT_CODE");
-            Integer seconds = mongodb.getInteger("CALL_TIME_LENGTH");
-            long seconds6 = new Double(Math.ceil(seconds / 6.0)).longValue();
-            long minutes = new Double(Math.ceil(seconds / 60.0)).longValue();
+            try {
+                bean bean = new bean();
+                Document mongodb = mongoCursor.next();
+                //获取参数
+                String accountId = mongodb.getString("ACCOUNT_ID");
+                String CALLED_NO = mongodb.getString("CALLED_NO");
+                String CAll_NO = mongodb.getString("CALL_NO");
+                String BEGIN_TIME = mongodb.getString("BEGIN_TIME");
+                System.out.println(BEGIN_TIME);
+                //排除400号码
+                if (CAll_NO.substring(0, 1).equals("4")) {
+                    continue;
+                }
+                String DISTRICT_CODE = mongodb.getString("DISTRICT_CODE");
+                Integer seconds = mongodb.getInteger("CALL_TIME_LENGTH");
+                long seconds6 = new Double(Math.ceil(seconds / 6.0)).longValue();
+                long minutes = new Double(Math.ceil(seconds / 60.0)).longValue();
 
-            //设置bean参数
-            bean.setAccountId(accountId);
-            bean.setMinutes(minutes);
-            bean.setSecnods6(seconds6);
-            bean.setSeconds(seconds);
-            //获取价格
-            Document data = collection.find(new Document("_id", accountId + "_cc")).first();
-            double price = getPrcie(data, CAll_NO, CALLED_NO, DISTRICT_CODE, seconds, mobile_code_collection);
-            bean.setTotalPrice(price);
-            //数据分组聚合
-            setMap(accountId, bean);
-            i++;
-            if (i % 10000 == 0) {
-                System.out.println("业务----------外呼-------cc------->第" + i + "条数据");
+                //设置bean参数
+                bean.setAccountId(accountId);
+                bean.setMinutes(minutes);
+                bean.setSecnods6(seconds6);
+                bean.setSeconds(seconds);
+                //获取价格
+                Document data = collection.find(new Document("_id", accountId + "_cc")).first();
+                double price = getPrcie(data, CAll_NO, CALLED_NO, DISTRICT_CODE, seconds, mobile_code_collection);
+                bean.setTotalPrice(price);
+                //数据分组聚合
+                setMap(accountId, bean);
+                i++;
+                if (i % 10000 == 0) {
+                    System.out.println("业务----------外呼-------cc------->第" + i + "条数据");
+                }
+            }catch (Exception e){
+                System.out.println("业务------------外呼---------cc--------报错了");
             }
         }} catch (Exception e){
             System.out.println("业务------------外呼---------cc--------报错了");

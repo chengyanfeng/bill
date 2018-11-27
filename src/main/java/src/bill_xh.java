@@ -202,8 +202,8 @@ public class bill_xh {
     private MongoCursor<Document> getIterator(MongoCollection<Document> collection, String accountId, String
             startTime, String endTime) {
         FindIterable<Document> documents = collection.find(new Document().append("begin_time", new Document()
-                .append("$gte", startTime))
-                .append("begin_time", new Document().append("$lte", endTime)).append("account", accountId)).noCursorTimeout(true);
+                .append("$gte", startTime)
+                .append("$lte", endTime)).append("account", accountId)).noCursorTimeout(true);
         MongoCursor<Document> iterator = documents.iterator();
         return iterator;
     }

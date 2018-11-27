@@ -1,0 +1,375 @@
+2018-11-26 11:26:20  [ Thread-0:0 ] - [ INFO ]  启动------计费-------小号---------线程
+2018-11-26 11:26:24  [ Thread-0:3589 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 11:26:24  [ Thread-0:3589 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 11:26:24  [ Thread-0:4217 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 11:26:26  [ cluster-ClusterId{value='5bfb67e06c88ba1be88271ab', description='null'}-47.97.3.136:9999:5977 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:2880}] to 47.97.3.136:9999
+2018-11-26 11:26:26  [ cluster-ClusterId{value='5bfb67e06c88ba1be88271ab', description='null'}-47.97.3.136:9999:6006 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=28005791}
+2018-11-26 11:26:26  [ cluster-ClusterId{value='5bfb67e06c88ba1be88271ab', description='null'}-47.97.3.136:9999:6008 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 11:26:26  [ Thread-0:6313 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:2881}] to 47.97.3.136:9999
+2018-11-26 11:27:50  [ Thread-0:1 ] - [ INFO ]  启动------计费-------小号---------线程
+2018-11-26 11:27:51  [ Thread-0:1220 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 11:27:51  [ Thread-0:1220 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 11:27:51  [ Thread-0:1343 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 11:27:52  [ cluster-ClusterId{value='5bfb68376c88ba2680c12e1a', description='null'}-47.97.3.136:9999:2133 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:2882}] to 47.97.3.136:9999
+2018-11-26 11:27:52  [ cluster-ClusterId{value='5bfb68376c88ba2680c12e1a', description='null'}-47.97.3.136:9999:2174 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=39070664}
+2018-11-26 11:27:52  [ cluster-ClusterId{value='5bfb68376c88ba2680c12e1a', description='null'}-47.97.3.136:9999:2175 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 11:27:52  [ Thread-0:2492 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:2883}] to 47.97.3.136:9999
+2018-11-26 12:45:44  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 12:45:44  [ Thread-1:6 ] - [ INFO ]  启动-------业务------外呼-------小号----2016-06-01-------线程
+2018-11-26 12:45:44  [ Thread-2:9 ] - [ INFO ]  启动-------业务------外呼-------小号----2016-12-01-------线程
+2018-11-26 12:45:44  [ Thread-3:11 ] - [ INFO ]  启动-------业务------外呼-------小号----2017-03-01-------线程
+2018-11-26 12:45:44  [ Thread-4:14 ] - [ INFO ]  启动-------业务------外呼-------小号----2017-11-01-------线程
+2018-11-26 12:45:44  [ Thread-5:15 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-03-01-------线程
+2018-11-26 12:45:44  [ Thread-6:16 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-09-01-------线程
+2018-11-26 12:45:46  [ Thread-4:1254 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 12:45:46  [ Thread-2:1254 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 12:45:46  [ Thread-1:1254 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 12:45:46  [ Thread-6:1254 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 12:45:46  [ Thread-5:1254 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 12:45:46  [ Thread-3:1254 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 12:45:46  [ Thread-5:1255 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 12:45:46  [ Thread-6:1255 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 12:45:46  [ Thread-1:1255 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 12:45:46  [ Thread-2:1255 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 12:45:46  [ Thread-4:1254 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 12:45:46  [ Thread-3:1255 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 12:45:46  [ Thread-4:1424 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 12:45:46  [ Thread-1:1424 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 12:45:46  [ Thread-2:1424 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 12:45:46  [ Thread-5:1424 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 12:45:46  [ Thread-3:1424 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 12:45:46  [ Thread-6:1424 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5e7', description='null'}-47.97.3.136:9999:2249 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:2909}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5ec', description='null'}-47.97.3.136:9999:2252 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:2913}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5eb', description='null'}-47.97.3.136:9999:2265 ] - [ INFO ]  Opened connection [connectionId{localValue:4, serverValue:2914}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5e8', description='null'}-47.97.3.136:9999:2265 ] - [ INFO ]  Opened connection [connectionId{localValue:6, serverValue:2912}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5e9', description='null'}-47.97.3.136:9999:2265 ] - [ INFO ]  Opened connection [connectionId{localValue:3, serverValue:2911}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5ea', description='null'}-47.97.3.136:9999:2279 ] - [ INFO ]  Opened connection [connectionId{localValue:5, serverValue:2910}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5e7', description='null'}-47.97.3.136:9999:2279 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=30541325}
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5e7', description='null'}-47.97.3.136:9999:2280 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5ec', description='null'}-47.97.3.136:9999:2283 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=30927601}
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5ec', description='null'}-47.97.3.136:9999:2283 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5e8', description='null'}-47.97.3.136:9999:2298 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=32778762}
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5e8', description='null'}-47.97.3.136:9999:2298 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5e9', description='null'}-47.97.3.136:9999:2298 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=33120095}
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5eb', description='null'}-47.97.3.136:9999:2298 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=33510352}
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5e9', description='null'}-47.97.3.136:9999:2298 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5eb', description='null'}-47.97.3.136:9999:2298 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5ea', description='null'}-47.97.3.136:9999:2308 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=28942750}
+2018-11-26 12:45:47  [ cluster-ClusterId{value='5bfb7a7a6c88ba32e8cdb5ea', description='null'}-47.97.3.136:9999:2308 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 12:45:47  [ Thread-2:2560 ] - [ INFO ]  Opened connection [connectionId{localValue:12, serverValue:2917}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ Thread-4:2560 ] - [ INFO ]  Opened connection [connectionId{localValue:9, serverValue:2918}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ Thread-5:2581 ] - [ INFO ]  Opened connection [connectionId{localValue:8, serverValue:2915}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ Thread-1:2581 ] - [ INFO ]  Opened connection [connectionId{localValue:11, serverValue:2919}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ Thread-3:2585 ] - [ INFO ]  Opened connection [connectionId{localValue:10, serverValue:2920}] to 47.97.3.136:9999
+2018-11-26 12:45:47  [ Thread-6:2585 ] - [ INFO ]  Opened connection [connectionId{localValue:7, serverValue:2916}] to 47.97.3.136:9999
+2018-11-26 12:45:48  [ Thread-6:3637 ] - [ INFO ]  Opened connection [connectionId{localValue:13, serverValue:2921}] to 47.97.3.136:9999
+2018-11-26 12:53:58  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 12:53:58  [ Thread-1:10 ] - [ INFO ]  启动-------业务------外呼-------小号----2016-06-01-------线程
+2018-11-26 12:54:00  [ Thread-1:1705 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 12:54:00  [ Thread-1:1705 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 12:54:00  [ Thread-1:1847 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 12:54:01  [ cluster-ClusterId{value='5bfb7c676c88ba34843437b0', description='null'}-47.97.3.136:9999:2710 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:2949}] to 47.97.3.136:9999
+2018-11-26 12:54:01  [ cluster-ClusterId{value='5bfb7c676c88ba34843437b0', description='null'}-47.97.3.136:9999:2760 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=48438545}
+2018-11-26 12:54:01  [ cluster-ClusterId{value='5bfb7c676c88ba34843437b0', description='null'}-47.97.3.136:9999:2761 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 12:54:01  [ Thread-1:3136 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:2950}] to 47.97.3.136:9999
+2018-11-26 12:54:18  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 12:54:18  [ Thread-1:60 ] - [ INFO ]  启动-------业务------外呼-------小号----2016-06-01-------线程
+2018-11-26 12:54:25  [ Thread-1:7008 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 12:54:25  [ Thread-1:7008 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 12:54:25  [ Thread-1:7155 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 12:54:26  [ cluster-ClusterId{value='5bfb7c816c88ba342802b309', description='null'}-47.97.3.136:9999:7919 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:2951}] to 47.97.3.136:9999
+2018-11-26 12:54:26  [ cluster-ClusterId{value='5bfb7c816c88ba342802b309', description='null'}-47.97.3.136:9999:7954 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=34465515}
+2018-11-26 12:54:26  [ cluster-ClusterId{value='5bfb7c816c88ba342802b309', description='null'}-47.97.3.136:9999:7955 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 12:54:26  [ Thread-1:8238 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:2952}] to 47.97.3.136:9999
+2018-11-26 15:43:17  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 15:43:17  [ Thread-1:9 ] - [ INFO ]  启动-------业务------外呼-------小号----2016-06-01-------线程
+2018-11-26 15:43:18  [ Thread-1:1126 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 15:43:18  [ Thread-1:1126 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 15:43:19  [ Thread-1:1287 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 15:43:19  [ cluster-ClusterId{value='5bfba4166c88ba3b78fe0d1e', description='null'}-47.97.3.136:9999:2115 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3022}] to 47.97.3.136:9999
+2018-11-26 15:43:19  [ cluster-ClusterId{value='5bfba4166c88ba3b78fe0d1e', description='null'}-47.97.3.136:9999:2147 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=30777983}
+2018-11-26 15:43:19  [ cluster-ClusterId{value='5bfba4166c88ba3b78fe0d1e', description='null'}-47.97.3.136:9999:2149 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 15:43:20  [ Thread-1:2391 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3023}] to 47.97.3.136:9999
+2018-11-26 15:43:37  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 15:43:37  [ Thread-1:25 ] - [ INFO ]  启动-------业务------外呼-------小号----2016-06-01-------线程
+2018-11-26 15:43:38  [ Thread-1:1114 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 15:43:38  [ Thread-1:1114 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 15:43:39  [ Thread-1:1269 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 15:43:42  [ cluster-ClusterId{value='5bfba42a6c88ba3668e00cbd', description='null'}-47.97.3.136:9999:4820 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3024}] to 47.97.3.136:9999
+2018-11-26 15:43:42  [ cluster-ClusterId{value='5bfba42a6c88ba3668e00cbd', description='null'}-47.97.3.136:9999:4850 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=29689131}
+2018-11-26 15:43:42  [ cluster-ClusterId{value='5bfba42a6c88ba3668e00cbd', description='null'}-47.97.3.136:9999:4852 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 15:43:42  [ Thread-1:5117 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3025}] to 47.97.3.136:9999
+2018-11-26 15:52:12  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 15:52:12  [ Thread-1:27 ] - [ INFO ]  启动-------业务------外呼-------小号----2016-06-01-------线程
+2018-11-26 15:52:13  [ Thread-1:1639 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 15:52:13  [ Thread-1:1639 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 15:52:14  [ Thread-1:1829 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 15:52:16  [ cluster-ClusterId{value='5bfba62d6c88ba38d02d2c90', description='null'}-47.97.3.136:9999:3813 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3026}] to 47.97.3.136:9999
+2018-11-26 15:52:16  [ cluster-ClusterId{value='5bfba62d6c88ba38d02d2c90', description='null'}-47.97.3.136:9999:3998 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=184172965}
+2018-11-26 15:52:16  [ cluster-ClusterId{value='5bfba62d6c88ba38d02d2c90', description='null'}-47.97.3.136:9999:4003 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 15:52:17  [ Thread-1:5400 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3027}] to 47.97.3.136:9999
+2018-11-26 16:04:33  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 16:04:33  [ Thread-1:28 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-03-01-------线程
+2018-11-26 16:04:34  [ Thread-1:1259 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 16:04:34  [ Thread-1:1259 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 16:04:34  [ Thread-1:1433 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 16:04:35  [ cluster-ClusterId{value='5bfba9126c88ba3ff86651b5', description='null'}-47.97.3.136:9999:2184 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3029}] to 47.97.3.136:9999
+2018-11-26 16:04:35  [ cluster-ClusterId{value='5bfba9126c88ba3ff86651b5', description='null'}-47.97.3.136:9999:2216 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=30719957}
+2018-11-26 16:04:35  [ cluster-ClusterId{value='5bfba9126c88ba3ff86651b5', description='null'}-47.97.3.136:9999:2217 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 16:04:35  [ Thread-1:2494 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3030}] to 47.97.3.136:9999
+2018-11-26 16:09:00  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 16:09:00  [ Thread-1:35 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-03-01-------线程
+2018-11-26 16:09:01  [ Thread-1:1635 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 16:09:01  [ Thread-1:1635 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 16:09:01  [ Thread-1:1772 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 16:09:02  [ cluster-ClusterId{value='5bfbaa1d6c88ba370c810848', description='null'}-47.97.3.136:9999:2550 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3031}] to 47.97.3.136:9999
+2018-11-26 16:09:02  [ cluster-ClusterId{value='5bfbaa1d6c88ba370c810848', description='null'}-47.97.3.136:9999:2581 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=30589113}
+2018-11-26 16:09:02  [ cluster-ClusterId{value='5bfbaa1d6c88ba370c810848', description='null'}-47.97.3.136:9999:2582 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 16:09:03  [ Thread-1:2858 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3032}] to 47.97.3.136:9999
+2018-11-26 16:15:19  [ cluster-ClusterId{value='5bfbaa1d6c88ba370c810848', description='null'}-47.97.3.136:9999:378971 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:142)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-26 16:15:42  [ Thread-1:401943 ] - [ WARN ]  Got socket exception on connection [connectionId{localValue:2, serverValue:3032}] to 47.97.3.136:9999. All connections to 47.97.3.136:9999 will be closed.
+2018-11-26 16:15:42  [ Thread-1:401944 ] - [ INFO ]  Closed connection [connectionId{localValue:2, serverValue:3032}] to 47.97.3.136:9999 because there was a socket exception raised by this connection.
+2018-11-26 16:17:11  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 16:17:11  [ Thread-1:23 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-03-01-------线程
+2018-11-26 16:17:12  [ Thread-1:1216 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 16:17:12  [ Thread-1:1217 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 16:17:13  [ Thread-1:1413 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 16:17:15  [ cluster-ClusterId{value='5bfbac086c88ba4a5cb566c0', description='null'}-47.97.3.136:9999:3789 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3050}] to 47.97.3.136:9999
+2018-11-26 16:17:15  [ cluster-ClusterId{value='5bfbac086c88ba4a5cb566c0', description='null'}-47.97.3.136:9999:4192 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=401422220}
+2018-11-26 16:17:15  [ cluster-ClusterId{value='5bfbac086c88ba4a5cb566c0', description='null'}-47.97.3.136:9999:4194 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 16:17:16  [ Thread-1:4756 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3051}] to 47.97.3.136:9999
+2018-11-26 16:18:29  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 16:18:29  [ Thread-1:27 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-03-01-------线程
+2018-11-26 16:18:30  [ Thread-1:1331 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 16:18:30  [ Thread-1:1331 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 16:18:30  [ Thread-1:1491 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 16:18:31  [ cluster-ClusterId{value='5bfbac566c88ba4b181a2b3d', description='null'}-47.97.3.136:9999:2347 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3052}] to 47.97.3.136:9999
+2018-11-26 16:18:31  [ cluster-ClusterId{value='5bfbac566c88ba4b181a2b3d', description='null'}-47.97.3.136:9999:2380 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=32191101}
+2018-11-26 16:18:31  [ cluster-ClusterId{value='5bfbac566c88ba4b181a2b3d', description='null'}-47.97.3.136:9999:2383 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 16:18:31  [ Thread-1:2633 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3053}] to 47.97.3.136:9999
+2018-11-26 16:35:55  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 16:35:55  [ Thread-1:5 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-03-01-------线程
+2018-11-26 16:35:55  [ Thread-2:5 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-09-01-------线程
+2018-11-26 16:35:56  [ Thread-2:1053 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 16:35:56  [ Thread-1:1053 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 16:35:56  [ Thread-2:1053 ] - [ INFO ]  Adding discovered server 127.0.0.1:9999 to client view of cluster
+2018-11-26 16:35:56  [ Thread-1:1053 ] - [ INFO ]  Adding discovered server 127.0.0.1:9999 to client view of cluster
+2018-11-26 16:35:56  [ Thread-1:1185 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=127.0.0.1:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 16:35:56  [ Thread-2:1185 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=127.0.0.1:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 16:35:57  [ cluster-ClusterId{value='5bfbb06c6c88ba3c8c619d9e', description='null'}-127.0.0.1:9999:2156 ] - [ INFO ]  Exception in monitor thread while connecting to server 127.0.0.1:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-26 16:35:57  [ cluster-ClusterId{value='5bfbb06c6c88ba3c8c619d9d', description='null'}-127.0.0.1:9999:2164 ] - [ INFO ]  Exception in monitor thread while connecting to server 127.0.0.1:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-26 16:36:48  [ Thread-0:1 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 16:36:48  [ Thread-2:6 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-09-01-------线程
+2018-11-26 16:36:48  [ Thread-1:6 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-03-01-------线程
+2018-11-26 16:36:49  [ Thread-2:1092 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 16:36:49  [ Thread-1:1092 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 16:36:49  [ Thread-2:1092 ] - [ INFO ]  Adding discovered server 127.0.0.1:9999 to client view of cluster
+2018-11-26 16:36:49  [ Thread-1:1092 ] - [ INFO ]  Adding discovered server 127.0.0.1:9999 to client view of cluster
+2018-11-26 16:36:50  [ Thread-1:1213 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=127.0.0.1:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 16:36:50  [ Thread-2:1213 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=127.0.0.1:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 16:36:51  [ cluster-ClusterId{value='5bfbb0a16c88ba2df44a0416', description='null'}-127.0.0.1:9999:2187 ] - [ INFO ]  Exception in monitor thread while connecting to server 127.0.0.1:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-26 16:36:51  [ cluster-ClusterId{value='5bfbb0a16c88ba2df44a0415', description='null'}-127.0.0.1:9999:2187 ] - [ INFO ]  Exception in monitor thread while connecting to server 127.0.0.1:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-26 17:14:36  [ Thread-1:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-26 17:14:36  [ Thread-0:0 ] - [ INFO ]  启动-------计费------外呼-------cc-----------线程
+2018-11-26 17:14:36  [ Thread-2:7 ] - [ INFO ]  启动-------计费------外呼-------cc----2016-06-01-------线程
+2018-11-26 17:14:36  [ Thread-3:58 ] - [ INFO ]  启动-------业务------外呼-------cc----2016-06-01-------线程
+2018-11-26 17:14:36  [ Thread-8:59 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-26 17:14:36  [ Thread-7:59 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-03-01-------线程
+2018-11-26 17:14:36  [ Thread-6:60 ] - [ INFO ]  启动-------业务------外呼-------cc----2017-11-01-------线程
+2018-11-26 17:14:36  [ Thread-5:60 ] - [ INFO ]  启动-------业务------外呼-------cc----2017-04-01-------线程
+2018-11-26 17:14:36  [ Thread-4:60 ] - [ INFO ]  启动-------业务------外呼-------cc----2016-12-01-------线程
+2018-11-26 17:14:38  [ Thread-2:1835 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 17:14:38  [ Thread-7:1835 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 17:14:38  [ Thread-8:1835 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 17:14:38  [ Thread-3:1835 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 17:14:38  [ Thread-8:1835 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 17:14:38  [ Thread-3:1835 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 17:14:38  [ Thread-4:1835 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 17:14:38  [ Thread-5:1835 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 17:14:38  [ Thread-6:1835 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 17:14:38  [ Thread-5:1836 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 17:14:38  [ Thread-4:1836 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 17:14:38  [ Thread-7:1835 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 17:14:38  [ Thread-2:1835 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 17:14:38  [ Thread-6:1836 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 17:14:38  [ Thread-3:2063 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 17:14:38  [ Thread-5:2063 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 17:14:38  [ Thread-7:2063 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 17:14:38  [ Thread-8:2063 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 17:14:38  [ Thread-6:2063 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 17:14:38  [ Thread-4:2063 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 17:14:38  [ Thread-2:2063 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630114', description='null'}-47.97.3.136:9999:2881 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3074}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630115', description='null'}-47.97.3.136:9999:2881 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3073}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b4063011a', description='null'}-47.97.3.136:9999:2882 ] - [ INFO ]  Opened connection [connectionId{localValue:5, serverValue:3075}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630116', description='null'}-47.97.3.136:9999:2882 ] - [ INFO ]  Opened connection [connectionId{localValue:6, serverValue:3076}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630119', description='null'}-47.97.3.136:9999:2885 ] - [ INFO ]  Opened connection [connectionId{localValue:3, serverValue:3078}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630118', description='null'}-47.97.3.136:9999:2886 ] - [ INFO ]  Opened connection [connectionId{localValue:7, serverValue:3079}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630117', description='null'}-47.97.3.136:9999:2888 ] - [ INFO ]  Opened connection [connectionId{localValue:4, serverValue:3077}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630114', description='null'}-47.97.3.136:9999:2908 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=26096034}
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630114', description='null'}-47.97.3.136:9999:2909 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630115', description='null'}-47.97.3.136:9999:2915 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=32729269}
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630115', description='null'}-47.97.3.136:9999:2915 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b4063011a', description='null'}-47.97.3.136:9999:2918 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=36327487}
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b4063011a', description='null'}-47.97.3.136:9999:2918 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630116', description='null'}-47.97.3.136:9999:2919 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=36557317}
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630116', description='null'}-47.97.3.136:9999:2919 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630119', description='null'}-47.97.3.136:9999:2920 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=34120769}
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630119', description='null'}-47.97.3.136:9999:2920 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630118', description='null'}-47.97.3.136:9999:2931 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=43819742}
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630117', description='null'}-47.97.3.136:9999:2931 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=42376473}
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630118', description='null'}-47.97.3.136:9999:2932 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 17:14:39  [ cluster-ClusterId{value='5bfbb97e6c0b764b40630117', description='null'}-47.97.3.136:9999:2932 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 17:14:39  [ Thread-3:3167 ] - [ INFO ]  Opened connection [connectionId{localValue:9, serverValue:3082}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ Thread-8:3167 ] - [ INFO ]  Opened connection [connectionId{localValue:13, serverValue:3083}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ Thread-2:3170 ] - [ INFO ]  Opened connection [connectionId{localValue:10, serverValue:3080}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ Thread-5:3170 ] - [ INFO ]  Opened connection [connectionId{localValue:11, serverValue:3081}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ Thread-6:3181 ] - [ INFO ]  Opened connection [connectionId{localValue:8, serverValue:3084}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ Thread-7:3187 ] - [ INFO ]  Opened connection [connectionId{localValue:12, serverValue:3085}] to 47.97.3.136:9999
+2018-11-26 17:14:39  [ Thread-4:3190 ] - [ INFO ]  Opened connection [connectionId{localValue:14, serverValue:3086}] to 47.97.3.136:9999
+2018-11-26 17:14:40  [ Thread-3:3588 ] - [ INFO ]  Opened connection [connectionId{localValue:15, serverValue:3087}] to 47.97.3.136:9999
+2018-11-26 17:14:40  [ Thread-4:3621 ] - [ INFO ]  Opened connection [connectionId{localValue:16, serverValue:3088}] to 47.97.3.136:9999
+2018-11-26 17:14:40  [ Thread-5:3664 ] - [ INFO ]  Opened connection [connectionId{localValue:17, serverValue:3089}] to 47.97.3.136:9999
+2018-11-26 17:14:40  [ Thread-7:3827 ] - [ INFO ]  Opened connection [connectionId{localValue:19, serverValue:3091}] to 47.97.3.136:9999
+2018-11-26 17:14:40  [ Thread-6:3828 ] - [ INFO ]  Opened connection [connectionId{localValue:18, serverValue:3090}] to 47.97.3.136:9999
+2018-11-26 17:14:40  [ Thread-8:3935 ] - [ INFO ]  Opened connection [connectionId{localValue:20, serverValue:3092}] to 47.97.3.136:9999
+2018-11-26 17:15:17  [ Thread-0:1 ] - [ INFO ]  启动-------计费------外呼-------cc-----------线程
+2018-11-26 17:15:17  [ Thread-1:3 ] - [ INFO ]  启动-------计费------外呼-------cc----2016-06-01-------线程
+2018-11-26 17:15:18  [ Thread-1:1463 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 17:15:18  [ Thread-1:1463 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 17:15:18  [ Thread-1:1618 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 17:15:19  [ cluster-ClusterId{value='5bfbb9a66c0b7636a43c3ae3', description='null'}-47.97.3.136:9999:2411 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3093}] to 47.97.3.136:9999
+2018-11-26 17:15:19  [ cluster-ClusterId{value='5bfbb9a66c0b7636a43c3ae3', description='null'}-47.97.3.136:9999:2439 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=26641029}
+2018-11-26 17:15:19  [ cluster-ClusterId{value='5bfbb9a66c0b7636a43c3ae3', description='null'}-47.97.3.136:9999:2440 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 17:15:19  [ Thread-1:2685 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3094}] to 47.97.3.136:9999
+2018-11-26 19:10:59  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 19:10:59  [ Thread-1:4 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-09-01-------线程
+2018-11-26 19:11:01  [ Thread-1:1448 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 19:11:01  [ Thread-1:1448 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 19:11:01  [ Thread-1:1604 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 19:11:03  [ cluster-ClusterId{value='5bfbd4c56c0b764aa4bd62df', description='null'}-47.97.3.136:9999:3313 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3113}] to 47.97.3.136:9999
+2018-11-26 19:11:03  [ cluster-ClusterId{value='5bfbd4c56c0b764aa4bd62df', description='null'}-47.97.3.136:9999:3440 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=126260158}
+2018-11-26 19:11:03  [ cluster-ClusterId{value='5bfbd4c56c0b764aa4bd62df', description='null'}-47.97.3.136:9999:3444 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 19:11:04  [ Thread-1:4878 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3114}] to 47.97.3.136:9999
+2018-11-26 20:23:51  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 20:23:51  [ Thread-1:6 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-09-01-------线程
+2018-11-26 20:23:52  [ Thread-1:1379 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 20:23:52  [ Thread-1:1379 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 20:23:52  [ Thread-1:1521 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 20:23:53  [ cluster-ClusterId{value='5bfbe5d86c0b764740e70809', description='null'}-47.97.3.136:9999:2358 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3141}] to 47.97.3.136:9999
+2018-11-26 20:23:53  [ cluster-ClusterId{value='5bfbe5d86c0b764740e70809', description='null'}-47.97.3.136:9999:2386 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=26643304}
+2018-11-26 20:23:53  [ cluster-ClusterId{value='5bfbe5d86c0b764740e70809', description='null'}-47.97.3.136:9999:2387 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 20:23:53  [ Thread-1:2648 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3142}] to 47.97.3.136:9999
+2018-11-26 20:25:20  [ Thread-0:0 ] - [ INFO ]  启动------业务-------小号---------线程
+2018-11-26 20:25:20  [ Thread-1:5 ] - [ INFO ]  启动-------业务------外呼-------小号----2018-09-01-------线程
+2018-11-26 20:25:22  [ Thread-1:1222 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 20:25:22  [ Thread-1:1223 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 20:25:22  [ Thread-1:1330 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 20:25:23  [ cluster-ClusterId{value='5bfbe6326c0b764474388437', description='null'}-47.97.3.136:9999:2143 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3143}] to 47.97.3.136:9999
+2018-11-26 20:25:23  [ cluster-ClusterId{value='5bfbe6326c0b764474388437', description='null'}-47.97.3.136:9999:2177 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=33713445}
+2018-11-26 20:25:23  [ cluster-ClusterId{value='5bfbe6326c0b764474388437', description='null'}-47.97.3.136:9999:2177 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 20:25:23  [ Thread-1:2435 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3144}] to 47.97.3.136:9999
+2018-11-26 20:36:33  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-26 20:36:33  [ Thread-1:25 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-26 20:36:34  [ Thread-1:1266 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 20:36:34  [ Thread-1:1266 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 20:36:35  [ Thread-1:1418 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 20:36:35  [ cluster-ClusterId{value='5bfbe8d26c0b7625e03a5098', description='null'}-47.97.3.136:9999:2152 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3154}] to 47.97.3.136:9999
+2018-11-26 20:36:35  [ cluster-ClusterId{value='5bfbe8d26c0b7625e03a5098', description='null'}-47.97.3.136:9999:2182 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=28864243}
+2018-11-26 20:36:35  [ cluster-ClusterId{value='5bfbe8d26c0b7625e03a5098', description='null'}-47.97.3.136:9999:2185 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 20:36:36  [ Thread-1:2462 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3155}] to 47.97.3.136:9999
+2018-11-26 20:43:17  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-26 20:43:17  [ Thread-1:27 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-26 20:43:19  [ Thread-1:1316 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-26 20:43:19  [ Thread-1:1316 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-26 20:43:19  [ Thread-1:1453 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-26 20:43:19  [ cluster-ClusterId{value='5bfbea676c0b7640fcd4ce52', description='null'}-47.97.3.136:9999:2200 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3161}] to 47.97.3.136:9999
+2018-11-26 20:43:19  [ cluster-ClusterId{value='5bfbea676c0b7640fcd4ce52', description='null'}-47.97.3.136:9999:2252 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=51404726}
+2018-11-26 20:43:19  [ cluster-ClusterId{value='5bfbea676c0b7640fcd4ce52', description='null'}-47.97.3.136:9999:2253 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-26 20:43:20  [ Thread-1:2470 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3162}] to 47.97.3.136:9999
