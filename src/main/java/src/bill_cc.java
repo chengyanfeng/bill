@@ -1,5 +1,6 @@
 package src;
 
+import bean.bean;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
@@ -9,173 +10,87 @@ import org.bson.Document;
 import util.ExcelUtil;
 import util.Mongodbjdbc;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class bill_cc {
-    int falg=0;
 
-    /**
-     * 计算总计数据
-     *
-     * @param startTime        开始时间
-     * @param endTime          结束时间
-     * @param filePath         excel文件路径
-     * @param defaultSheetName 默认工作表名
-     */
-    public  void calculateCC(String startTime, String endTime, String filePath, String defaultSheetName) {
-        MongoCursor<Document> iterator = null;
-        try {
-            iterator = this.queryData(startTime, endTime);
-            this.exportData(filePath, defaultSheetName, iterator, startTime, endTime);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (null != iterator) {
-                iterator.close();
+        HashMap<String, bean> map = new HashMap<>();
+       static long i = 0;
+        public void calculateCC(String startTime, String endTime, String filePath, String defaultSheetName) {
+
+            FindIterable<Document> test = Mongodbjdbc.MongGetDom().getCollection(
+                    "bill_cdr_query_cc").find(new Document().append("beginTime", new Document()
+                    .append("$gte", startTime)
+                    .append("$lte", endTime)))
+                    .projection(new Document().append("account",1).append("did",1).append("callerDistrictNo",1).append("calleeDistrictNo",1).append("seconds",1).append("seconds6",1).append("minutes",1))
+                    .noCursorTimeout(true);
+            MongoCursor<Document> mongoCursor = test.iterator();
+            MongoCollection<Document> collection = Mongodbjdbc.MongGetDom().getCollection("platform_account_product");
+            while (mongoCursor.hasNext()) {
+                bean bean = new bean();
+                Document mongodb = mongoCursor.next();
+                //获取参数
+                String accountId = mongodb.getString("account");
+                String did = mongodb.getString("did");
+                String callerDistrictNo = mongodb.getString("callerDistrictNo");
+                String calleeDistrictNo = mongodb.getString("calleeDistrictNo");
+                Long seconds = mongodb.getLong("seconds");
+                Long seconds6 = mongodb.getLong("seconds6");
+                Long minutes = mongodb.getLong("minutes");
+
+                //设置bean参数
+                bean.setAccountId(accountId);
+                bean.setMinutes(minutes);
+                bean.setSecnods6(seconds6);
+                bean.setSeconds(seconds);
+                //获取价格
+                Document data = collection.find(new Document("_id", accountId + "_cc")).first();
+                double price = getPrcie(data, did, seconds,callerDistrictNo,calleeDistrictNo);
+                bean.setTotalPrice(price);
+                //数据分组聚合
+                setMap(accountId, bean);
+                i++;
+                if(i%10000==0){
+                    System.out.println("计费----------外呼-------cc------->第"+i+"条数据");
+                }
             }
-        }
-    }
+            //导出数据
+            exportData(filePath,defaultSheetName);
 
 
-    /**
-     * 查询数据
-     *
-     * @param startTime 开始时间
-     * @param endTime   结束时间
-     * @return 查询结果
-     */
-    private MongoCursor<Document> queryData(String startTime, String endTime) {
-        List<Document> pipeline = new ArrayList<>();
-
-//        筛选条件
-        Document match = new Document("beginTime", new Document("$gte", startTime))
-                .append("beginTime", new Document("$lte", endTime));
-        pipeline.add(new Document("$match", match));
-
-//        返回字段
-        Document project = new Document("account", 1)
-                .append("seconds", 1)
-                .append("seconds6", 1)
-                .append("minutes", 1);
-        pipeline.add(new Document("$project", project));
-
-//        分组条件
-        Document groupBy = new Document("_id", new Document("account", "$account"))
-                .append("totalCount", new Document("$sum", 1))
-                .append("totalMinutes", new Document("$sum", "$minutes"))
-                .append("totalSeconds", new Document("$sum", "$seconds"))
-                .append("totalSeconds6", new Document("$sum", "$seconds6"));
-        pipeline.add(new Document("$group", groupBy));
-
-        MongoCollection<Document> collection = Mongodbjdbc.MongGetDom().getCollection("bill_cdr_query_cc");
-        return collection.aggregate(pipeline).allowDiskUse(true).iterator();
-    }
-
-    /**
-     * 导出数据到excel
-     *
-     * @param filePath         excel文件路径
-     * @param defaultSheetName 默认工作表名
-     * @param iterator         数据
-     */
-    private void exportData(String filePath, String defaultSheetName, MongoCursor<Document> iterator, String startTime, String endTime) {
-//        创建工作簿和表
-        SXSSFWorkbook wb = ExcelUtil.INSTANCE.returnWorkBookGivenFileHandle(filePath, defaultSheetName);
-        if (null == wb) {
-            return;
         }
 
-//        将列头添加至表
-        SXSSFSheet sheet = ExcelUtil.INSTANCE.returnSheetFromWorkBook(wb);
-        Map<Integer, String> headers = new HashMap<>();
-        headers.put(0, "账户编号");
-        headers.put(1, "条数");
-        headers.put(2, "计费分钟");
-        headers.put(3, "计费6秒数");
-        headers.put(4, "计费秒数");
-        headers.put(5, "计费费用（元）");
-        ExcelUtil.INSTANCE.insertRows(sheet, ExcelUtil.INSTANCE.getNextRowNum(), headers);
-
-        while (iterator.hasNext()) {
-            Document document = iterator.next();
-            String account = document.get("_id", Document.class).getString("account");
-            String totalCount = String.valueOf(document.getInteger("totalCount"));
-            String totalMinutes = String.valueOf(document.getLong("totalMinutes"));
-            String totalSeconds6 = String.valueOf(document.getLong("totalSeconds6"));
-            String totalSeconds = String.valueOf(document.getLong("totalSeconds"));
-
-            Map<Integer, String> rowCells = new HashMap<>();
-            rowCells.put(0, account);
-            rowCells.put(1, totalCount);
-            rowCells.put(2, totalMinutes);
-            rowCells.put(3, totalSeconds6);
-            rowCells.put(4, totalSeconds);
-            rowCells.put(5, this.calculateTotalPrice(account, startTime, endTime)+"");
-            ExcelUtil.INSTANCE.insertRows(sheet, ExcelUtil.INSTANCE.getNextRowNum(), rowCells);
-
-        }
-        ExcelUtil.INSTANCE.saveExcelAndReset(wb, ExcelUtil.INSTANCE.getFilePath());
-    }
-
-    /**
-     * 计算总价
-     *
-     * @param
-     * @return 总价
-     */
-    private double calculateTotalPrice(String accountId, String startTime, String endTime) {
-        //根据账户查询出电话号码
-        MongoCollection<Document> collection_cc = Mongodbjdbc.MongGetDom().getCollection("bill_cdr_query_cc");
-        MongoCursor<Document> iterator = getIterator(collection_cc, accountId,startTime, endTime );
-        MongoCollection<Document> collection = Mongodbjdbc.MongGetDom().getCollection("platform_account_product");
-        Document data = collection.find(new Document("_id", accountId + "_cc")).first();
-        double total=0;
-        while (iterator.hasNext()) {
-            System.out.println(falg++);
-            Document document = iterator.next();
-            String type = document.getString("type");
-            String did = document.getString("did");
-            long minutes = document.getLong("minutes");
-            long seconds = document.getLong("seconds");
-            long seconds6 = document.getLong("seconds6");
+        public static double getPrcie(Document data, String number, long seconds,String callerDistrictNo,String calleeDistrictNo) {
+            double total = 0;
+            long seconds6 = new Double(Math.ceil(seconds / 6.0)).longValue();
+            long minutes = new Double(Math.ceil(seconds / 60.0)).longValue();
             if (null != data) {
                 String strategyType = "dialFeeStrategy";
                 String feeType = "dialFee";
-                if (type.equals("transfer")) {
-                    strategyType = "transferFeeStrategy";
-                    feeType = "transferFee";
-                    if (!data.containsKey("transferFeeStrategy")) {
-                        strategyType = "dialFeeStrategy";
-                        feeType = "dialFee";
-                    }
-                }
                 String strategy = data.getString(strategyType);
                 Document dialFee = data.get(feeType, Document.class);
-                String callerDistrictNo = document.getString("callerDistrictNo");
-                String calleeDistrictNo = document.getString("calleeDistrictNo");
                 boolean isLocal = false;
-                if (callerDistrictNo.equals(calleeDistrictNo)) {
-                    isLocal = true;
-                }
+            if (callerDistrictNo.equals(calleeDistrictNo)) {
+                isLocal = true;
+            }
                 if ("minute".equals(strategy)) {
                     Integer local = dialFee.getInteger("local");
                     Integer remote = dialFee.getInteger("remote");
                     Integer localTelPrice = dialFee.getInteger("localTel");
                     Integer remoteTelPrice = dialFee.getInteger("remoteTel");
                     if (isLocal) {
-                        if (isMobileNo(did)) {
-                            total=total+ local * minutes / 10000.0 ;
+                        if (isMobileNo(number)) {
+                            total = total + local * minutes / 10000.0;
                         } else {
-                            total=total+ localTelPrice * minutes / 10000.0 ;
+                            total = total + localTelPrice * minutes / 10000.0;
                         }
                     } else {
-                        if (isMobileNo(did)) {
-                            total=total+ remote * minutes / 10000.0 ;
+                        if (isMobileNo(number)) {
+                            total = total + remote * minutes / 10000.0;
                         } else {
-                            total=total+ remoteTelPrice * minutes / 10000.0 ;
+                            total = total + remoteTelPrice * minutes / 10000.0;
                         }
                     }
                 } else if ("minute3".equals(strategy)) {
@@ -183,24 +98,24 @@ public class bill_cc {
                     Integer localPrice = dialFee.getInteger("local");
                     Integer prefixMin = dialFee.getInteger("prefixMin");
                     if (isLocal) {
-                        long afterTotalMinutes = minutes- 3;
+                        long afterTotalMinutes = minutes - 3;
                         if (afterTotalMinutes < 0) {
                             afterTotalMinutes = 0;
                         }
-                        total=total+ prefixMin/10000.0 + afterTotalMinutes * localPrice / 10000.0 ;
+                        total = total + prefixMin / 10000.0 + afterTotalMinutes * localPrice / 10000.0;
                     } else {
-                        total=total+ remotePrice * minutes / 10000.0 ;
+                        total = total + remotePrice * minutes / 10000.0;
                     }
                 } else if ("second6".equals(strategy)) {
                     Integer remotePrice = dialFee.getInteger("remote");
                     Integer localPrice = dialFee.getInteger("local");
                     // 市话
                     if (isLocal) {
-                        total=total+ localPrice * seconds6 / 10000.0 ;
+                        total = total + localPrice * seconds6 / 10000.0;
                     }
                     // 长途
                     else {
-                        total=total+ remotePrice *seconds6/ 10000.0 ;
+                        total = total + remotePrice * seconds6 / 10000.0;
                     }
                 } else if ("minute3s6".equals(strategy)) {
                     Integer remotePrice = dialFee.getInteger("remote");
@@ -212,37 +127,91 @@ public class bill_cc {
                         if (after3m < 0) {
                             after3m = 0;
                         }
-                        total=total+ prefixMin/10000.0 + after3m * localPrice/10000.0;
+                        total = total + prefixMin / 10000.0 + after3m * localPrice / 10000.0;
                     }
                     // 长途
                     else {
-                        total=total +remotePrice * seconds6/10000.0;
+                        total = total + remotePrice * seconds6 / 10000.0;
 
                     }
                 }
+
+            }
+            return total;
+        }
+
+        /**
+         * 判断是否手机号
+         *
+         * @param number 待检验数据
+         * @return true：是手机号，false：不是手机号
+         */
+        private static boolean isMobileNo(String number) {
+            if (number.matches("1[34578][0-9]{9}"))
+                return true;
+            return false;
+        }
+
+        /**
+         * 把数据合并到map中
+         */
+        private void setMap(String accountId, bean bean) {
+            bean value = map.get(accountId);
+            if (value != null) {
+                value.setSecnods6(value.getSecnods6() + bean.getSecnods6());
+                value.setSeconds(value.getSeconds() + bean.getSeconds());
+                value.setMinutes(value.getMinutes() + bean.getMinutes());
+                value.setTotalPrice(value.getTotalPrice() + bean.getTotalPrice());
+                value.setCount(value.getCount()+1);
+            } else {
+                bean.setCount(1);
+                map.put(accountId, bean);
             }
         }
-        return total;
-    }
-    /**
-     * 判断是否手机号
-     *
-     * @param number 待检验数据
-     * @return true：是手机号，false：不是手机号
-     */
-    private boolean isMobileNo (String number){
-        if (number.matches("1[34578][0-9]{9}"))
-            return true;
-        return false;
-    }
-    private MongoCursor<Document> getIterator (MongoCollection < Document > collection, String accountId, String
-            startTime, String endTime){
-        List<Document> pipeline = new ArrayList<>();
-        FindIterable<Document> documents = collection.find(new Document().append("beginTime", new Document()
-                .append("$gte", startTime)
-                .append("$lte", endTime)).append("account",accountId)).noCursorTimeout(true);
-        MongoCursor < Document > iterator = documents.iterator();
-        return iterator;
-    }
-}
 
+
+        /**
+         * 导出数据到excel
+         *
+         * @param filePath         excel文件路径
+         * @param defaultSheetName 默认工作表名
+         *
+         */
+        private void exportData(String filePath, String defaultSheetName) {
+//        创建工作簿和表
+            SXSSFWorkbook wb = ExcelUtil.INSTANCE.returnWorkBookGivenFileHandle(filePath, defaultSheetName);
+            if (null == wb) {
+                return;
+            }
+
+//        将列头添加至表
+            SXSSFSheet sheet = ExcelUtil.INSTANCE.returnSheetFromWorkBook(wb);
+            Map<Integer, String> headers = new HashMap<>();
+            headers.put(0, "账户编号");
+            headers.put(1, "条数");
+            headers.put(2, "计费分钟");
+            headers.put(3, "计费6秒数");
+            headers.put(4, "计费秒数");
+            headers.put(5, "计费费用（元）");
+            ExcelUtil.INSTANCE.insertRows(sheet, ExcelUtil.INSTANCE.getNextRowNum(), headers);
+            Set<String> keys= map.keySet();
+            for(String key: keys) {
+                bean insertExcel=map.get(key);
+                Map<Integer, String> rowCells = new HashMap<>();
+                rowCells.put(0, insertExcel.getAccountId());
+                rowCells.put(1, insertExcel.getCount()+"");
+                rowCells.put(2, insertExcel.getMinutes()+"");
+                rowCells.put(3, insertExcel.getSecnods6()+"");
+                rowCells.put(4, insertExcel.getSeconds()+"");
+                rowCells.put(5, insertExcel.getTotalPrice()+"");
+                ExcelUtil.INSTANCE.insertRows(sheet, ExcelUtil.INSTANCE.getNextRowNum(), rowCells);
+            }
+
+            ExcelUtil.INSTANCE.saveExcelAndReset(wb, ExcelUtil.INSTANCE.getFilePath());
+            map.clear();
+        }
+
+
+
+
+}

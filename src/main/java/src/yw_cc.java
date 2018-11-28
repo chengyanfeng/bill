@@ -25,7 +25,7 @@ public class yw_cc {
         FindIterable<Document> test = Mongodbjdbc.MongGetDom().getCollection("c5_call_sheet").find(new Document().append("BEGIN_TIME", new Document()
                 .append("$gte", startTime)
                 .append("$lte", endTime))
-                .append("CONNECT_TYPE", "dialout")
+                /*.append("CONNECT_TYPE", "dialout")*/
                 .append("CALL_TIME_LENGTH", new Document("$gt", 0)).append("MID_NO",new Document("$exists",false))).noCursorTimeout(true)
                 .projection(new Document("ACCOUNT_ID", 1)
                         .append("CALLED_NO", 1)
@@ -47,7 +47,7 @@ public class yw_cc {
                 String CALLED_NO = mongodb.getString("CALLED_NO");
                 String CAll_NO = mongodb.getString("CALL_NO");
                 String BEGIN_TIME = mongodb.getString("BEGIN_TIME");
-                System.out.println(BEGIN_TIME);
+
                 //排除400号码
                 if (CAll_NO.substring(0, 1).equals("4")) {
                     continue;
@@ -70,7 +70,9 @@ public class yw_cc {
                 setMap(accountId, bean);
                 i++;
                 if (i % 10000 == 0) {
+
                     System.out.println("业务----------外呼-------cc------->第" + i + "条数据");
+                    System.out.println(BEGIN_TIME);
                 }
             }catch (Exception e){
                 System.out.println("业务------------外呼---------cc--------报错了");
@@ -264,6 +266,7 @@ public class yw_cc {
                 area_code = data.getString("area_code");
             } catch (Exception e) {
                 System.out.println(e);
+                return true;
             }
             if (DISTRICT_CODE.equals(area_code)) {
                 return true;

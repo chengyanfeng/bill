@@ -16,7 +16,7 @@ public class main {
         String path = getProperties_3("/main/resources/path.properties", "path");
         System.out.println("配置文件路径:"+path);
         //计费---小号----数据
-       /*new Thread() {
+      new Thread() {
             public void run() {
                 System.out.println("启动------计费-------小号---------线程");
                 logger.info("启动------计费-------小号---------线程");
@@ -30,7 +30,7 @@ public class main {
             }
         }.start();
         //计费---外呼---cc--数据
-      new Thread() {
+     /* new Thread() {
             public void run() {
                 System.out.println("启动--------计费-----外呼-------cc----------线程");
                 logger.info("启动-------计费------外呼-------cc-----------线程");
@@ -39,7 +39,7 @@ public class main {
                     public void run() {
                         System.out.println("启动-------计费------外呼-------cc----2016-06-01-------线程");
                         logger.info("启动-------计费------外呼-------cc----2016-06-01-------线程");
-                        bill_new_cc new_cc = new bill_new_cc();
+                        bill_cc new_cc = new bill_cc();
 
                         new_cc.calculateCC("1464710400", "1467302399", path + "2016-06-01-bill-cc.xlsx", "sheet");
                     }
@@ -47,7 +47,7 @@ public class main {
               new Thread() {
                     @Override
                     public void run() {
-                        bill_new_cc new_cc = new bill_new_cc();
+                        bill_cc new_cc = new bill_cc();
 
                         System.out.println("启动-------计费------外呼-------cc----2016-12-01-------线程");
                         logger.info("启动-------计费------外呼-------cc----2016-12-01-------线程");
@@ -57,7 +57,7 @@ public class main {
                 new Thread() {
                     @Override
                     public void run() {
-                        bill_new_cc new_cc = new bill_new_cc();
+                        bill_cc new_cc = new bill_cc();
 
                         System.out.println("启动-------计费------外呼-------cc----2017-03-01-------线程");
                         logger.info("启动-------计费------外呼-------cc----2017-03-01-------线程");
@@ -68,7 +68,7 @@ public class main {
                 new Thread() {
                     @Override
                     public void run() {
-                        bill_new_cc new_cc = new bill_new_cc();
+                        bill_cc new_cc = new bill_cc();
 
                         System.out.println("启动-------计费------外呼-------cc----2017-11-01-------线程");
                         logger.info("启动-------计费------外呼-------cc----2017-11-01-------线程");
@@ -79,7 +79,7 @@ public class main {
                 new Thread() {
                     @Override
                     public void run() {
-                        bill_new_cc new_cc = new bill_new_cc();
+                        bill_cc new_cc = new bill_cc();
 
                         System.out.println("启动-------计费------外呼-------cc----2018-03-01-------线程");
                         logger.info("启动-------计费------外呼-------cc----2018-03-01-------线程");
@@ -91,7 +91,7 @@ public class main {
                 new Thread() {
                     @Override
                     public void run() {
-                        bill_new_cc new_cc = new bill_new_cc();
+                        bill_cc new_cc = new bill_cc();
 
                         System.out.println("启动-------计费------外呼-------cc----2018-09-01-------线程");
                         logger.info("启动-------计费------外呼-------cc----2018-09-01-------线程");
@@ -107,7 +107,7 @@ public class main {
                 System.out.println("启动-------业务------外呼-------cc-----------线程");
                 logger.info("启动-------业务------外呼-------cc-----------线程");
                //开启内部线程
-            /*    new Thread() {
+             /* new Thread() {
                     @Override
                     public void run() {
                         yw_cc yw_cc = new yw_cc();
@@ -172,7 +172,7 @@ public class main {
         }.start();
 
         //业务----小号-----xh-----数据
-   /* new Thread() {
+    /*new Thread() {
             public void run() {
                 System.out.println("启动------业务-------小号---------线程");
                 logger.info("启动------业务-------小号---------线程");
@@ -241,8 +241,8 @@ public class main {
 
 
             }
-        }.start();
-*/
+        }.start();*/
+
 
     }
 
