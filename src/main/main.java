@@ -16,7 +16,7 @@ public class main {
         String path = getProperties_3("/main/resources/path.properties", "path");
         System.out.println("配置文件路径:" + path);
         //计费---小号----数据
-        new Thread() {
+       new Thread() {
             public void run() {
                 System.out.println("启动------计费-------小号---------线程");
                 logger.info("启动------计费-------小号---------线程");
@@ -52,7 +52,7 @@ public class main {
             }
         }.start();
         //计费---外呼---cc--数据
-        new Thread() {
+       /* new Thread() {
             public void run() {
                 System.out.println("启动--------计费-----外呼-------cc----------线程");
                 logger.info("启动-------计费------外呼-------cc-----------线程");
@@ -231,7 +231,7 @@ public class main {
 
 
             }
-        }.start();
+        }.start();*/
 
 
     }

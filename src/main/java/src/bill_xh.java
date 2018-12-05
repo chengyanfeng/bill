@@ -59,7 +59,7 @@ public class bill_xh {
             setMap(accountId, bean);
             i++;
             if (i % 10000 == 0) {
-                System.out.println("业务----------外呼-------cc------->第" + i + "条数据");
+                System.out.println("业务----------小号-------外呼------->第" + i + "条数据");
             }
         }
         //导出数据
@@ -152,7 +152,7 @@ public class bill_xh {
             return;
         }
 
-//        将列头添加至表
+//    将列头添加至表
         SXSSFSheet sheet = ExcelUtil.INSTANCE.returnSheetFromWorkBook(wb);
         Map<Integer, String> headers = new HashMap<>();
         headers.put(0, "账户编号");
