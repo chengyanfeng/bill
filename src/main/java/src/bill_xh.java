@@ -38,18 +38,22 @@ public class bill_xh {
             //获取参数
             String accountId = mongodb.getString("account");
             Integer call_duration = mongodb.getInteger("call_duration");
-            Boolean ifCallback = mongodb.getBoolean("ifCallback");
             String platformType = mongodb.getString("platformType");
-            Integer minutes = mongodb.getInteger("minutes");
+            Long minutes = mongodb.getLong("minutes");
 
 
             //设置bean参数
             bean.setAccountId(accountId);
             bean.setSeconds(call_duration);
-            bean.setMinutes(minutes);
+            if (minutes!=null){
+                bean.setMinutes(minutes);
+                }else {
+                minutes=0l;
+                bean.setMinutes(0l);
+            }
             //获取价格
             Document data = collection.find(new Document("_id", accountId + "_cc")).first();
-            double price = getPrcie(data, ifCallback, platformType,minutes);
+            double price = getPrcie(data, mongodb, platformType,minutes);
             bean.setTotalPrice(price);
             //数据分组聚合
             setMap(accountId, bean);
@@ -70,10 +74,10 @@ public class bill_xh {
      * @return
      */
 
-    public static double getPrcie(Document data, boolean ifCallback1, String platformType,long minutes) {
+    public static double getPrcie(Document data, Document mongodb, String platformType,long minutes) {
         double total = 0;
         long price = 1000;
-        Boolean ifCallback=ifCallback1;
+        Boolean ifCallback=   mongodb.getBoolean("ifCallback");
         if (platformType == null) {
             platformType = "";
         }

@@ -1,0 +1,230 @@
+2018-11-27 10:49:45  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 10:49:45  [ Thread-1:27 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 10:49:47  [ Thread-1:1367 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 10:49:47  [ Thread-1:1367 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 10:49:47  [ Thread-1:1552 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 10:49:48  [ cluster-ClusterId{value='5bfcb0cb6c0b763e1896e90a', description='null'}-47.97.3.136:9999:2406 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3238}] to 47.97.3.136:9999
+2018-11-27 10:49:48  [ cluster-ClusterId{value='5bfcb0cb6c0b763e1896e90a', description='null'}-47.97.3.136:9999:2437 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=29759673}
+2018-11-27 10:49:48  [ cluster-ClusterId{value='5bfcb0cb6c0b763e1896e90a', description='null'}-47.97.3.136:9999:2441 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 10:49:48  [ Thread-1:2706 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3239}] to 47.97.3.136:9999
+2018-11-27 10:50:48  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 10:50:48  [ Thread-1:34 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 10:50:50  [ Thread-1:1783 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 10:50:50  [ Thread-1:1784 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 10:50:50  [ Thread-1:1993 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 10:50:51  [ cluster-ClusterId{value='5bfcb10a6c0b764964bd1ac9', description='null'}-47.97.3.136:9999:2771 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3240}] to 47.97.3.136:9999
+2018-11-27 10:50:51  [ cluster-ClusterId{value='5bfcb10a6c0b764964bd1ac9', description='null'}-47.97.3.136:9999:2799 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=27476156}
+2018-11-27 10:50:51  [ cluster-ClusterId{value='5bfcb10a6c0b764964bd1ac9', description='null'}-47.97.3.136:9999:2800 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 10:50:51  [ Thread-1:3056 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3241}] to 47.97.3.136:9999
+2018-11-27 10:51:56  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 10:51:56  [ Thread-1:5 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 10:51:58  [ Thread-1:1301 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 10:51:58  [ Thread-1:1302 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 10:51:58  [ Thread-1:1429 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 10:51:58  [ cluster-ClusterId{value='5bfcb14d6c0b764e6c98ea69', description='null'}-47.97.3.136:9999:2214 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3242}] to 47.97.3.136:9999
+2018-11-27 10:51:58  [ cluster-ClusterId{value='5bfcb14d6c0b764e6c98ea69', description='null'}-47.97.3.136:9999:2248 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=32667829}
+2018-11-27 10:51:58  [ cluster-ClusterId{value='5bfcb14d6c0b764e6c98ea69', description='null'}-47.97.3.136:9999:2248 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 10:51:59  [ Thread-1:2525 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3243}] to 47.97.3.136:9999
+2018-11-27 10:53:12  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 10:53:12  [ Thread-1:5 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 10:53:14  [ Thread-1:1337 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 10:53:14  [ Thread-1:1338 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 10:53:14  [ Thread-1:1466 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 10:53:15  [ cluster-ClusterId{value='5bfcb19a6c0b763ae898234b', description='null'}-47.97.3.136:9999:2262 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3244}] to 47.97.3.136:9999
+2018-11-27 10:53:15  [ cluster-ClusterId{value='5bfcb19a6c0b763ae898234b', description='null'}-47.97.3.136:9999:2292 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=29909860}
+2018-11-27 10:53:15  [ cluster-ClusterId{value='5bfcb19a6c0b763ae898234b', description='null'}-47.97.3.136:9999:2293 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 10:53:15  [ Thread-1:2574 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3245}] to 47.97.3.136:9999
+2018-11-27 10:55:04  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 10:55:04  [ Thread-1:5 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 10:55:05  [ Thread-1:1397 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 10:55:05  [ Thread-1:1397 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 10:55:05  [ Thread-1:1567 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 10:55:06  [ cluster-ClusterId{value='5bfcb2096c0b761d24bad3ea', description='null'}-47.97.3.136:9999:2570 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3246}] to 47.97.3.136:9999
+2018-11-27 10:55:06  [ cluster-ClusterId{value='5bfcb2096c0b761d24bad3ea', description='null'}-47.97.3.136:9999:2603 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=31494213}
+2018-11-27 10:55:06  [ cluster-ClusterId{value='5bfcb2096c0b761d24bad3ea', description='null'}-47.97.3.136:9999:2606 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 10:55:07  [ Thread-1:2928 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3247}] to 47.97.3.136:9999
+2018-11-27 10:55:35  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 10:55:35  [ Thread-1:5 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 10:55:36  [ Thread-1:1304 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 10:55:36  [ Thread-1:1305 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 10:55:36  [ Thread-1:1429 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 10:55:37  [ cluster-ClusterId{value='5bfcb2286c0b76434c16a600', description='null'}-47.97.3.136:9999:2359 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3248}] to 47.97.3.136:9999
+2018-11-27 10:55:37  [ cluster-ClusterId{value='5bfcb2286c0b76434c16a600', description='null'}-47.97.3.136:9999:2392 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=30652828}
+2018-11-27 10:55:37  [ cluster-ClusterId{value='5bfcb2286c0b76434c16a600', description='null'}-47.97.3.136:9999:2395 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 10:55:37  [ Thread-1:2643 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3249}] to 47.97.3.136:9999
+2018-11-27 11:02:31  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 11:02:31  [ Thread-1:5 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 11:02:32  [ Thread-1:1308 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 11:02:32  [ Thread-1:1309 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 11:02:32  [ Thread-1:1434 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 11:02:33  [ cluster-ClusterId{value='5bfcb3c86c0b7619d06c22fd', description='null'}-47.97.3.136:9999:2240 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3250}] to 47.97.3.136:9999
+2018-11-27 11:02:33  [ cluster-ClusterId{value='5bfcb3c86c0b7619d06c22fd', description='null'}-47.97.3.136:9999:2273 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=31836684}
+2018-11-27 11:02:33  [ cluster-ClusterId{value='5bfcb3c86c0b7619d06c22fd', description='null'}-47.97.3.136:9999:2274 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 11:02:33  [ Thread-1:2551 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3251}] to 47.97.3.136:9999
+2018-11-27 11:04:12  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 11:04:12  [ Thread-1:5 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 11:04:13  [ Thread-1:1241 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 11:04:13  [ Thread-1:1241 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 11:04:13  [ Thread-1:1376 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 11:04:14  [ cluster-ClusterId{value='5bfcb42d6c0b763a94d1c807', description='null'}-47.97.3.136:9999:2152 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3252}] to 47.97.3.136:9999
+2018-11-27 11:04:14  [ cluster-ClusterId{value='5bfcb42d6c0b763a94d1c807', description='null'}-47.97.3.136:9999:2189 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=37259325}
+2018-11-27 11:04:14  [ cluster-ClusterId{value='5bfcb42d6c0b763a94d1c807', description='null'}-47.97.3.136:9999:2190 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 11:04:14  [ Thread-1:2484 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3253}] to 47.97.3.136:9999
+2018-11-27 11:23:21  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 11:23:21  [ Thread-1:23 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 11:23:23  [ Thread-1:1299 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 11:23:23  [ Thread-1:1299 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 11:23:23  [ Thread-1:1436 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 11:23:24  [ cluster-ClusterId{value='5bfcb8ab6c0b7625bcb6866f', description='null'}-47.97.3.136:9999:2190 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3260}] to 47.97.3.136:9999
+2018-11-27 11:23:24  [ cluster-ClusterId{value='5bfcb8ab6c0b7625bcb6866f', description='null'}-47.97.3.136:9999:2223 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=32508541}
+2018-11-27 11:23:24  [ cluster-ClusterId{value='5bfcb8ab6c0b7625bcb6866f', description='null'}-47.97.3.136:9999:2226 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 11:23:24  [ Thread-1:2483 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3261}] to 47.97.3.136:9999
+2018-11-27 11:49:19  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 11:49:19  [ Thread-1:4 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 11:49:21  [ Thread-1:1259 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 11:49:21  [ Thread-1:1260 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 11:49:21  [ Thread-1:1368 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 11:49:22  [ cluster-ClusterId{value='5bfcbec16c0b76020c25a122', description='null'}-47.97.3.136:9999:2239 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3266}] to 47.97.3.136:9999
+2018-11-27 11:49:22  [ cluster-ClusterId{value='5bfcbec16c0b76020c25a122', description='null'}-47.97.3.136:9999:2268 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=28767532}
+2018-11-27 11:49:22  [ cluster-ClusterId{value='5bfcbec16c0b76020c25a122', description='null'}-47.97.3.136:9999:2269 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 11:49:22  [ Thread-1:2502 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3267}] to 47.97.3.136:9999
+2018-11-27 16:35:22  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 16:35:22  [ Thread-1:4 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 16:35:24  [ Thread-1:1261 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 16:35:24  [ Thread-1:1261 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 16:35:24  [ Thread-1:1363 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 16:35:27  [ Thread-0:0 ] - [ INFO ]  启动-------业务------外呼-------cc-----------线程
+2018-11-27 16:35:27  [ Thread-1:22 ] - [ INFO ]  启动-------业务------外呼-------cc----2018-09-01-------线程
+2018-11-27 16:35:28  [ Thread-1:1340 ] - [ INFO ]  Cluster created with settings {hosts=[47.97.3.136:9999], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-27 16:35:28  [ Thread-1:1340 ] - [ INFO ]  Adding discovered server 47.97.3.136:9999 to client view of cluster
+2018-11-27 16:35:28  [ Thread-1:1484 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 16:35:29  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:2294 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:3363}] to 47.97.3.136:9999
+2018-11-27 16:35:29  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:2324 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=29292047}
+2018-11-27 16:35:29  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:2325 ] - [ INFO ]  Discovered cluster type of STANDALONE
+2018-11-27 16:35:29  [ Thread-1:2553 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:3364}] to 47.97.3.136:9999
+2018-11-27 17:52:18  [ Thread-1:4611858 ] - [ WARN ]  Got socket exception on connection [connectionId{localValue:2, serverValue:3364}] to 47.97.3.136:9999. All connections to 47.97.3.136:9999 will be closed.
+2018-11-27 17:52:18  [ Thread-1:4611873 ] - [ INFO ]  Closed connection [connectionId{localValue:2, serverValue:3364}] to 47.97.3.136:9999 because there was a socket exception raised by this connection.
+2018-11-27 17:52:18  [ Thread-1:4611875 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:52:28  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:4621223 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:480)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:225)
+	at com.mongodb.connection.CommandHelper.receiveReply(CommandHelper.java:134)
+	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:121)
+	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:83)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:43)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mongodb.connection.SocketStream.read(SocketStream.java:85)
+	at com.mongodb.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:491)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:221)
+	... 8 more
+2018-11-27 17:52:48  [ Thread-1:4641877 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:53:18  [ Thread-1:4671878 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:53:29  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:4682268 ] - [ INFO ]  Opened connection [connectionId{localValue:10, serverValue:2}] to 47.97.3.136:9999
+2018-11-27 17:53:29  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:4682297 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=28496172}
+2018-11-27 17:53:29  [ Thread-1:4682596 ] - [ INFO ]  Opened connection [connectionId{localValue:11, serverValue:3}] to 47.97.3.136:9999
+2018-11-27 17:54:29  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:4742336 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:474)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:225)
+	at com.mongodb.connection.CommandHelper.receiveReply(CommandHelper.java:134)
+	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:121)
+	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:83)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:43)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:142)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mongodb.connection.SocketStream.read(SocketStream.java:85)
+	at com.mongodb.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:491)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:221)
+	... 8 more
+2018-11-27 17:55:16  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:4789576 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:480)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:225)
+	at com.mongodb.connection.CommandHelper.receiveReply(CommandHelper.java:134)
+	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:121)
+	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:83)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:43)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mongodb.connection.SocketStream.read(SocketStream.java:85)
+	at com.mongodb.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:491)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:221)
+	... 8 more
+2018-11-27 17:55:16  [ Thread-1:4789577 ] - [ WARN ]  Got socket exception on connection [connectionId{localValue:11, serverValue:3}] to 47.97.3.136:9999. All connections to 47.97.3.136:9999 will be closed.
+2018-11-27 17:55:16  [ Thread-1:4789579 ] - [ INFO ]  Closed connection [connectionId{localValue:11, serverValue:3}] to 47.97.3.136:9999 because there was a socket exception raised by this connection.
+2018-11-27 17:55:16  [ Thread-1:4789580 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:55:26  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:4799207 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:480)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:225)
+	at com.mongodb.connection.CommandHelper.receiveReply(CommandHelper.java:134)
+	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:121)
+	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:83)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:43)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mongodb.connection.SocketStream.read(SocketStream.java:85)
+	at com.mongodb.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:491)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:221)
+	... 8 more
+2018-11-27 17:55:46  [ Thread-1:4819580 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:55:56  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:4829463 ] - [ INFO ]  Opened connection [connectionId{localValue:19, serverValue:3}] to 47.97.3.136:9999
+2018-11-27 17:55:56  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:4829493 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=30349610}
+2018-11-27 17:55:56  [ Thread-1:4829801 ] - [ INFO ]  Opened connection [connectionId{localValue:20, serverValue:4}] to 47.97.3.136:9999
+2018-11-27 17:56:22  [ Thread-1:4855359 ] - [ WARN ]  Got socket exception on connection [connectionId{localValue:20, serverValue:4}] to 47.97.3.136:9999. All connections to 47.97.3.136:9999 will be closed.
+2018-11-27 17:56:22  [ Thread-1:4855361 ] - [ INFO ]  Closed connection [connectionId{localValue:20, serverValue:4}] to 47.97.3.136:9999 because there was a socket exception raised by this connection.
+2018-11-27 17:56:22  [ Thread-1:4855361 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:56:31  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:4864696 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:480)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:225)
+	at com.mongodb.connection.CommandHelper.receiveReply(CommandHelper.java:134)
+	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:121)
+	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:83)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:43)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mongodb.connection.SocketStream.read(SocketStream.java:85)
+	at com.mongodb.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:491)
+	at com.mongodb.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:221)
+	... 8 more
+2018-11-27 17:56:52  [ Thread-1:4885363 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:57:22  [ Thread-1:4915364 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:57:52  [ Thread-1:4945365 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:58:22  [ Thread-1:4975367 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:58:52  [ Thread-1:5005369 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]}. Waiting for 30000 ms before timing out
+2018-11-27 17:59:12  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:5025841 ] - [ INFO ]  Opened connection [connectionId{localValue:38, serverValue:3}] to 47.97.3.136:9999
+2018-11-27 17:59:12  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:5025870 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=28985985}
+2018-11-27 17:59:13  [ Thread-1:5026108 ] - [ INFO ]  Opened connection [connectionId{localValue:39, serverValue:4}] to 47.97.3.136:9999
+2018-11-27 18:02:32  [ Thread-1:5225388 ] - [ INFO ]  Closed connection [connectionId{localValue:39, serverValue:4}] to 47.97.3.136:9999 because there was a socket exception raised on another connection from this pool.
+2018-11-27 18:02:32  [ cluster-ClusterId{value='5bfd01d06c0b76488c57b894', description='null'}-47.97.3.136:9999:5225607 ] - [ INFO ]  Opened connection [connectionId{localValue:40, serverValue:26}] to 47.97.3.136:9999
+2018-11-27 18:02:32  [ Thread-1:5225661 ] - [ INFO ]  Opened connection [connectionId{localValue:41, serverValue:27}] to 47.97.3.136:9999

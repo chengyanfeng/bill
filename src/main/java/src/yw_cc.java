@@ -25,7 +25,7 @@ public class yw_cc {
         FindIterable<Document> test = Mongodbjdbc.MongGetDom().getCollection("c5_call_sheet").find(new Document().append("BEGIN_TIME", new Document()
                 .append("$gte", startTime)
                 .append("$lte", endTime))
-                /*.append("CONNECT_TYPE", "dialout")*/
+                .append("CONNECT_TYPE", "dialout")
                 .append("CALL_TIME_LENGTH", new Document("$gt", 0)).append("MID_NO",new Document("$exists",false))).noCursorTimeout(true)
                 .projection(new Document("ACCOUNT_ID", 1)
                         .append("CALLED_NO", 1)
