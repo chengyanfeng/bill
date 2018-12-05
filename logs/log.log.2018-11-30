@@ -1,0 +1,163 @@
+2018-11-30 02:46:30  [ Thread-3:10972701 ] - [ WARN ]  Got socket exception on connection [connectionId{localValue:7, serverValue:5026}] to 47.97.3.136:9999. All connections to 47.97.3.136:9999 will be closed.
+2018-11-30 02:46:30  [ Thread-3:10972714 ] - [ INFO ]  Closed connection [connectionId{localValue:7, serverValue:5026}] to 47.97.3.136:9999 because there was a socket exception raised by this connection.
+2018-11-30 02:46:30  [ Thread-3:10972715 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-11-30 02:46:30  [ Thread-4:10972821 ] - [ WARN ]  Got socket exception on connection [connectionId{localValue:4, serverValue:5024}] to 47.97.3.136:9999. All connections to 47.97.3.136:9999 will be closed.
+2018-11-30 02:46:30  [ Thread-0:10972821 ] - [ WARN ]  Got socket exception on connection [connectionId{localValue:8, serverValue:5027}] to 47.97.3.136:9999. All connections to 47.97.3.136:9999 will be closed.
+2018-11-30 02:46:30  [ Thread-4:10972822 ] - [ INFO ]  Closed connection [connectionId{localValue:4, serverValue:5024}] to 47.97.3.136:9999 because there was a socket exception raised by this connection.
+2018-11-30 02:46:30  [ Thread-0:10972822 ] - [ INFO ]  Closed connection [connectionId{localValue:8, serverValue:5027}] to 47.97.3.136:9999 because there was a socket exception raised by this connection.
+2018-11-30 02:46:31  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:10973147 ] - [ INFO ]  Opened connection [connectionId{localValue:10, serverValue:5040}] to 47.97.3.136:9999
+2018-11-30 02:46:31  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:10973186 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=38241226}
+2018-11-30 02:46:31  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a728', description='null'}-47.97.3.136:9999:10973372 ] - [ INFO ]  Opened connection [connectionId{localValue:11, serverValue:5041}] to 47.97.3.136:9999
+2018-11-30 02:46:31  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a72a', description='null'}-47.97.3.136:9999:10973403 ] - [ INFO ]  Opened connection [connectionId{localValue:12, serverValue:5042}] to 47.97.3.136:9999
+2018-11-30 02:46:31  [ Thread-3:10973475 ] - [ INFO ]  Opened connection [connectionId{localValue:13, serverValue:5043}] to 47.97.3.136:9999
+2018-11-30 09:54:33  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a72a', description='null'}-47.97.3.136:9999:36655158 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:142)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-30 09:54:33  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:36655337 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:142)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-30 09:54:33  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a728', description='null'}-47.97.3.136:9999:36655337 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:142)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-30 09:54:40  [ Thread-3:36662936 ] - [ INFO ]  Closed connection [connectionId{localValue:13, serverValue:5043}] to 47.97.3.136:9999 because there was a socket exception raised by this connection.
+2018-11-30 09:54:40  [ Thread-3:36662936 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.NoRouteToHostException: No route to host: connect}}]}. Waiting for 30000 ms before timing out
+2018-11-30 09:55:10  [ Thread-3:36692937 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.NoRouteToHostException: No route to host: connect}}]}. Waiting for 30000 ms before timing out
+2018-11-30 09:55:26  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:36708100 ] - [ INFO ]  Opened connection [connectionId{localValue:114, serverValue:5050}] to 47.97.3.136:9999
+2018-11-30 09:55:26  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:36708147 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=46926440}
+2018-11-30 09:55:27  [ Thread-3:36709313 ] - [ INFO ]  Opened connection [connectionId{localValue:115, serverValue:5051}] to 47.97.3.136:9999
+2018-11-30 09:55:34  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a72a', description='null'}-47.97.3.136:9999:36716421 ] - [ INFO ]  Opened connection [connectionId{localValue:116, serverValue:5052}] to 47.97.3.136:9999
+2018-11-30 09:55:34  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a728', description='null'}-47.97.3.136:9999:36716427 ] - [ INFO ]  Opened connection [connectionId{localValue:117, serverValue:5053}] to 47.97.3.136:9999
+2018-11-30 09:55:34  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a72a', description='null'}-47.97.3.136:9999:36716635 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=213847874}
+2018-11-30 09:55:34  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a728', description='null'}-47.97.3.136:9999:36716646 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=218064472}
+2018-11-30 09:58:00  [ Thread-3:36862234 ] - [ WARN ]  Got socket exception on connection [connectionId{localValue:115, serverValue:5051}] to 47.97.3.136:9999. All connections to 47.97.3.136:9999 will be closed.
+2018-11-30 09:58:00  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:36862235 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:142)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-30 09:58:00  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a728', description='null'}-47.97.3.136:9999:36862235 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:142)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-30 09:58:00  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a72a', description='null'}-47.97.3.136:9999:36862235 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:142)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-30 09:58:00  [ Thread-3:36862257 ] - [ INFO ]  Closed connection [connectionId{localValue:115, serverValue:5051}] to 47.97.3.136:9999 because there was a socket exception raised by this connection.
+2018-11-30 09:58:00  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:36862258 ] - [ INFO ]  Exception in monitor thread while connecting to server 47.97.3.136:9999
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:114)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+2018-11-30 09:58:00  [ Thread-3:36862258 ] - [ INFO ]  No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=STANDALONE, connectionMode=MULTIPLE, all=[ServerDescription{address=47.97.3.136:9999, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketException: Network is unreachable: connect}}]}. Waiting for 30000 ms before timing out
+2018-11-30 09:58:05  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:36867589 ] - [ INFO ]  Opened connection [connectionId{localValue:131, serverValue:5054}] to 47.97.3.136:9999
+2018-11-30 09:58:05  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:36867617 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=28231071}
+2018-11-30 09:58:05  [ Thread-3:36867844 ] - [ INFO ]  Opened connection [connectionId{localValue:132, serverValue:5055}] to 47.97.3.136:9999
+2018-11-30 09:58:10  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a72a', description='null'}-47.97.3.136:9999:36872472 ] - [ INFO ]  Opened connection [connectionId{localValue:134, serverValue:5056}] to 47.97.3.136:9999
+2018-11-30 09:58:10  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a728', description='null'}-47.97.3.136:9999:36872485 ] - [ INFO ]  Opened connection [connectionId{localValue:133, serverValue:5057}] to 47.97.3.136:9999
+2018-11-30 09:58:10  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a72a', description='null'}-47.97.3.136:9999:36872500 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=27308335}
+2018-11-30 09:58:10  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a728', description='null'}-47.97.3.136:9999:36872516 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=47.97.3.136:9999, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 13]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=30479885}
+2018-11-30 10:13:27  [ Thread-3:37789042 ] - [ INFO ]  Closed connection [connectionId{localValue:6, serverValue:5023}] to 47.97.3.136:9999 because there was a socket exception raised on another connection from this pool.
+2018-11-30 10:13:27  [ Thread-3:37789271 ] - [ INFO ]  Opened connection [connectionId{localValue:135, serverValue:5058}] to 47.97.3.136:9999
+2018-11-30 11:52:48  [ Thread-3:43750423 ] - [ INFO ]  Closed connection [connectionId{localValue:132, serverValue:5055}] to 47.97.3.136:9999 because there was a socket exception raised on another connection from this pool.
+2018-11-30 11:52:48  [ cluster-ClusterId{value='5c00092c6c0b7690bc89a729', description='null'}-47.97.3.136:9999:43750619 ] - [ INFO ]  Opened connection [connectionId{localValue:136, serverValue:5069}] to 47.97.3.136:9999
+2018-11-30 11:52:48  [ Thread-3:43750665 ] - [ INFO ]  Opened connection [connectionId{localValue:137, serverValue:5070}] to 47.97.3.136:9999
